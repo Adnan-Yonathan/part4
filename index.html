@@ -3,123 +3,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PcParts - Home</title>
+  <title>PcParts - World Wide Leader in Computer Parts</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">PcParts</a>
+    <div class="container">
+      <a class="navbar-brand" href="index.html">PcParts</a>
+      <span class="navbar-text">World Wide Leader in Computer Parts</span>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
-          <li class="nav-item"><a class="nav-link" href="profile.html">Profile</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Main Banner -->
-  <div class="jumbotron text-center text-white" style="background-image: url('your-banner-image.jpg'); background-size: cover; height: 400px;">
-    <h1 class="display-4">Welcome to PcParts</h1>
-    <p class="lead">World Wide Leader in Computer Parts</p>
-  </div>
-
-  <!-- Categories Section -->
-  <div class="container my-5">
-    <h2 class="text-center">Shop By Category</h2>
-    <div class="row">
-      
-      <!-- Graphics Cards Section -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="graphics-cards-image.jpg" class="card-img-top" alt="Graphics Cards">
-          <div class="card-body">
-            <h5 class="card-title">Graphics Cards</h5>
-            <p class="card-text">Shop the best graphics cards from leading brands like Nvidia, AMD, and more.</p>
-            <a href="nvidia.html" class="btn btn-primary">Shop Now</a>
-          </div>
-        </div>
+  <!-- Hero Section -->
+  <div class="hero-section" style="background-color: #333; height: 600px; text-align: center; color: white;">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div>
+        <h1 class="display-3">PcParts</h1>
+        <p class="lead">World Wide Leader in Computer Parts</p>
+        <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
       </div>
-
-      <!-- Processors Section -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="processors-image.jpg" class="card-img-top" alt="Processors">
-          <div class="card-body">
-            <h5 class="card-title">Processors</h5>
-            <p class="card-text">Choose from top processors including Intel, AMD, and Apple.</p>
-            <a href="intel-processor.html" class="btn btn-primary">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bundles Section -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="bundles-image.jpg" class="card-img-top" alt="Bundles">
-          <div class="card-body">
-            <h5 class="card-title">Bundles</h5>
-            <p class="card-text">Explore our bundle deals to save money while building your dream PC.</p>
-            <a href="gaming-bundle.html" class="btn btn-primary">Shop Now</a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
-  <!-- Clearance Section -->
-  <div class="container my-5">
-    <h2 class="text-center">Clearance</h2>
-    <p class="text-center">Check out the best deals on computer parts in our clearance section.</p>
+  <!-- Graphics Cards Section -->
+  <div class="container my-5" id="graphics-cards">
+    <h2 class="text-center mb-4">Graphics Cards</h2>
     <div class="row">
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="clearance-image1.jpg" class="card-img-top" alt="Clearance Item">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="NVIDIA Graphics Cards">
           <div class="card-body">
-            <h5 class="card-title">Clearance Item 1</h5>
-            <p class="card-text">Discounted price for this item!</p>
-            <a href="clearance-item-1.html" class="btn btn-primary">Shop Now</a>
+            <h5 class="card-title">NVIDIA Graphics Cards</h5>
+            <p class="card-text">Shop the latest and most powerful graphics cards from NVIDIA, including RTX and GTX models.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="clearance-image2.jpg" class="card-img-top" alt="Clearance Item">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="AMD Graphics Cards">
           <div class="card-body">
-            <h5 class="card-title">Clearance Item 2</h5>
-            <p class="card-text">Grab this offer before it's gone!</p>
-            <a href="clearance-item-2.html" class="btn btn-primary">Shop Now</a>
+            <h5 class="card-title">AMD Graphics Cards</h5>
+            <p class="card-text">Explore AMD's range of high-performance graphics cards, including the Radeon RX series.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="clearance-image3.jpg" class="card-img-top" alt="Clearance Item">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Intel Graphics Cards">
           <div class="card-body">
-            <h5 class="card-title">Clearance Item 3</h5>
-            <p class="card-text">Unbeatable price on this clearance item.</p>
-            <a href="clearance-item-3.html" class="btn btn-primary">Shop Now</a>
+            <h5 class="card-title">Intel Graphics Cards</h5>
+            <p class="card-text">Browse Intel's latest Arc series GPUs for powerful performance in gaming and creative applications.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
           </div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Processors Section -->
+  <div class="container my-5" id="processors">
+    <h2 class="text-center mb-4">Processors</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Intel Processors">
+          <div class="card-body">
+            <h5 class="card-title">Intel Processors</h5>
+            <p class="card-text">Shop the latest Intel Core series processors, from i3 to i9, for gaming and productivity.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="AMD Processors">
+          <div class="card-body">
+            <h5 class="card-title">AMD Processors</h5>
+            <p class="card-text">Explore AMD Ryzen processors, known for their multi-threaded performance and efficiency.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Apple Processors">
+          <div class="card-body">
+            <h5 class="card-title">Apple Processors</h5>
+            <p class="card-text">Shop Apple’s M-series processors, designed for the latest Macs with industry-leading performance.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bundles Section -->
+  <div class="container my-5" id="bundles">
+    <h2 class="text-center mb-4">Bundles</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Gaming Bundle">
+          <div class="card-body">
+            <h5 class="card-title">Gaming Bundle</h5>
+            <p class="card-text">A powerful combination of components to build your ultimate gaming rig.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Office Bundle">
+          <div class="card-body">
+            <h5 class="card-title">Office Bundle</h5>
+            <p class="card-text">Everything you need to build a powerful and efficient office setup.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Workstation Bundle">
+          <div class="card-body">
+            <h5 class="card-title">Workstation Bundle</h5>
+            <p class="card-text">Create a high-performance workstation for content creation and professional work.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">
     <p>&copy; 2024 PcParts. All Rights Reserved.</p>
   </footer>
 
+  <!-- Bootstrap JS and Popper.js -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
