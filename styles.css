@@ -1,0 +1,33 @@
+/* Custom Styles for the Website */
+
+/* Navbar customizations */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* Hero Section */
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+/* Product Cards */
+.card {
+  border: 1px solid #ddd;
+}
+.card-title {
+  color: #333;
+}
+.card-text {
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
